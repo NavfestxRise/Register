@@ -1,0 +1,135 @@
+@font-face {
+    font-family: manrope-bold;
+    src: url('../inc/fonts/bold.otf');
+}
+@font-face {
+    font-family: manrope-thin;
+    src: url('../inc/fonts/regular.otf');
+}
+@font-face {
+    font-family: mewyork;
+    src: url('../inc/fonts/newyork.otf');
+}
+html,body{
+    font-family: manrope-thin;    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background:#2b010f;
+}
+
+.form-landing-img-left{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color: white;
+    width: 25vw;
+}
+
+.form-landing-img-left > img{
+    width: 80%;
+    height: 250px;
+    margin: calc(50vh - 125px) 50px;
+}
+
+.form-landing-img-right{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    color: white;
+    width: 25vw;
+
+}
+
+.form-landing-img-right > img{
+    width: 60%;
+    height: 300px;
+    margin: calc(50vh - 150px) 50px;
+}
+
+.form-landing{
+    height: 100vh;
+    color: white;
+    margin: 0 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h2{
+    font-family: manrope-bold;
+    font-size: 4rem;
+    padding: 2%;
+    margin: 0;
+}
+
+.form-fields{
+    width: 800px;
+    padding-top: 5%;
+    margin: 0;
+}
+
+
+.form-fields i{
+    width: 40px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.input-wrap{
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #5a0822;
+    overflow: visible;
+    font-size: 1.2rem;
+    max-height: 40px;
+    padding: 10px;
+}
+
+input:focus{
+    transition: width 2s ease-in-out;
+    width: 100%;
+    outline: none;
+    background-color: #440318;
+    border-radius: 10px;
+}
+input::placeholder{
+    font-size: 1.2rem;
+}
+
+
+.button{
+    margin: 20px;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: #2b010f;
+    background-color: #fee6ba;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pt2{
+    display: block;
+}
+
+.flex-parent{
+    display: flex;
+    width: 90%;
+}

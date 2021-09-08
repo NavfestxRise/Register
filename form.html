@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="inc/lib/fontawesome/css/all.min.css.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form-landing-img-left">
+        <img src="med/logo.png" alt="">
+    </div>
+    <div class="form-landing-img-right">
+        <img src="med/rise_logo.png" alt="">
+    </div>
+    <center>
+        <div class="form-landing">
+            <h2>Registrations</h2>
+            <div>
+                <div class="form-fields">
+                    <div class="input-wrap">
+                        <i class="fal fa-school"></i>
+                        <input type="text" id="SchoolName" placeholder="School Name" class="field">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" id="Principle's_Name" placeholder="Principal's Name">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="email" id="School_Email" placeholder="School's Email">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-user"></i>
+                    <input type="text" name="text" id="Teacher_Name" placeholder="Teacher Incharge">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-envelope-open"></i>
+                    <input type="email" id="Teacher_Email" placeholder="Teacher Incharge Email">
+                    </div>
+                    <div class="input-wrap">
+                    <i class="fal fa-phone-alt"></i>
+                    <input type="number" name="" id="Number_of_Teacher" placeholder="Teacher Incharge Number">
+                    </div>
+                    <center><button id="Next" class="Next button">Next</button></center>
+                </div>
+            </div>
+        </div>
+        
+    </center>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
