@@ -220,7 +220,7 @@ let SwitchN=()=>{
 	let b = 0;
 	for (k of checked) {
 		for (let i = 0; i <= document.querySelector(".event" + checked[current]).childNodes.length; i++) {
-			field = document.querySelector(".event" + k).childNodes[i]
+			field = document.querySelector(".event" + checked[current]).childNodes[i]
 			if (b == 1)
 				return;
 			if (field.tagName == "INPUT") {
@@ -238,7 +238,6 @@ let SwitchN=()=>{
 					cfield = field.childNodes[j];
 					if(cfield != null)
 						if (cfield.tagName == "INPUT") {
-							console.log(cfield)
 							if (cfield.value == "") {
 								console.log("foo")
 								alert("all values for selected events must be filled!");
@@ -338,4 +337,5 @@ let toCheck = () => {
 
 let toMain = () => {
     document.querySelector(".checkboxes").style.display = "none";
-    document.querySelector(".mainRegister").style.display = "bl
+    document.querySelector(".mainRegister").style.display = "block";
+}
