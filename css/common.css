@@ -28,7 +28,7 @@ body{
 }
 
 .nav-landing > img{
-    width: 60%;
+    width: 45%;
 }
 
 .svg-color svg{
@@ -89,7 +89,7 @@ body{
 }
 
 .event{
-    padding-top: 100px !important;
+    padding-top: 200px !important;
 }
 .nav-white-cont{
     position: absolute;
@@ -105,7 +105,7 @@ body{
     color: aliceblue;
     display: flex;
     width: 940px;
-    height: 360px;
+    /* height: 360px; */
     margin-left: calc(50vw - 490px);
     clip-path: polygon(0 0, 100% calc(100 + 105vw), 100% 100%, 0 100%);
 }
@@ -121,10 +121,10 @@ body{
     background: #2b010f;
     margin-top:5vh;
     position: relative;
-    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% calc(30% - 10vw), 100% calc(100% - 10vw), 0 100%);
 }
 .nav-event-flex-wrap{
-    padding:100px;
+    padding:100px 100px 200px 100px;
     text-align:center;
     padding-right:70px;
     vertical-align: center;
@@ -159,6 +159,13 @@ body{
     margin-left:calc(50vw - 250px);
     margin-right:calc(50vw - 250px);
 }
+
+.name-center{
+    width: 250px;
+    margin-left:calc(50vw - 125px);
+    margin-right:calc(50vw - 125px);
+}
+
 .nav-footer{
     padding: 20px;
     text-align: center;
@@ -435,7 +442,17 @@ body{
         height: 300px;
     }
     .nav-landing{
-        height: calc(100vh + 300px);
+        height: 90vh;
+        background: #2b010f;
+    }
+    .nav-landing > img{
+        width: 100%;
+    }
+    .contact{
+        display: block;
+    }
+    .nav-event-cont{
+        clip-path: polygon(0 0, 100% calc(4% - 2vw), 100% calc(100% - 10vw), 0 100%);
     }
     .nav-align{
         display: flex;
@@ -451,8 +468,7 @@ body{
         width: auto;
     }
     .nav-event-flex-wrap{
-        padding:0px;
-        padding-top:100px;
+        padding:100px 0 100px 0;
         overflow-x: hidden;
     }
     .nav-event-flex{
@@ -481,7 +497,7 @@ body{
     }
     .nav-event-flex-info{
         bottom:30px;
-        color: white;
+        color: #fee6ba;
     }
     .nav-letter{
         width: calc(100% - 70px);
@@ -493,7 +509,8 @@ body{
     .nav-user-circle{
         width: 150px;
         height: 150px;
-        position: relative;
+        position: absolute;
+        left: calc(50% - 75px);
     }
     .nav-user-circle::before{
         display: none;
@@ -502,8 +519,8 @@ body{
         height: 300px;
     }
     .nav-carousel-slide{
-        height: 300px;
-        width: 100vw;
+        height: 200px;
+        width: 90vw;
     }
     .nav-carousel-slider{
         left: calc((50vw - (50vw + 20px)));
