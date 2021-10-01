@@ -451,6 +451,15 @@ body{
     color: #fee6ba;
     display: inline-block;
 }
+.timer-cover-acent{
+    width: 90px;
+    height: 70px;
+    background: #fee6ba;
+    text-align: center;
+    vertical-align: middle;
+    color:#2b010f;
+    display: inline-block;
+}
 @media screen and (max-width:900px){
     .nav-white-boi{
         height: 300px;
