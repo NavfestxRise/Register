@@ -6,6 +6,10 @@
     font-family: manrope-thin;
     src: url('../inc/fonts/regular.otf');
 }
+@font-face {
+    font-family: timer;
+    src: url('../inc/fonts/DS-DIGI.TTF')
+}
 html,body{
     font-family: manrope-thin;
     background: #fee6ba;
@@ -116,6 +120,7 @@ body{
 }
 .nav-align-p.p2{
     width: 60%;
+    padding-bottom: 40px;
 }
 .nav-event-cont{
     background: #2b010f;
@@ -297,13 +302,12 @@ body{
     width: 200px;
     position: absolute;
     top: 20px;
-    left: 20px;
     background: #2b010f;
     border-radius: 50%;
 }
 .nav-user-circle.two::before{
     z-index: -2;
-    left: -20px;
+    left: -100px;
 }
 .nav-letter{
     border-radius: 10px;
@@ -436,6 +440,16 @@ body{
 .contact{
     display: flex;
     gap: 2vw;
+}
+
+.timer-cover{
+    width: 90px;
+    height: 70px;
+    background: #2b010f;
+    text-align: center;
+    vertical-align: middle;
+    color: #fee6ba;
+    display: inline-block;
 }
 @media screen and (max-width:900px){
     .nav-white-boi{

@@ -12,6 +12,8 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/checkbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script src="inc/lib/jquery-3.1.1.js"></script>
     <script src="inc/lib/jquery.data-parallax.js"></script>
     <script src="inc/lib/scroller.js"></script>
@@ -91,6 +93,40 @@
     <br>
     <br>
     <br>
+    <center>
+        <div class="nav-heading" style="width: 100%; color: #2b010f;">
+            Registration closes in
+        </div>
+        <br>
+            <div class="timer-cover">
+                <span id="timer-days" style="font-family: timer; font-size: 3rem;"></span>
+                <br>
+                Days
+            </div>
+            <div class="timer-cover">
+                <span id="timer-hours" style="font-family: timer; font-size: 3rem;"></span>
+                <br>
+                Hours
+            </div>
+            <div class="timer-cover">
+                <span id="timer-min" style="font-family: timer; font-size: 3rem;"></span>
+                <br>
+                Minutes
+            </div>
+            <div class="timer-cover">
+                <span id="timer-sec" style="font-family: timer; font-size: 3rem;"></span>
+                <br>
+                Seconds
+            </div>
+            <br>
+            <br>
+            <br>
+        <img src="med/image.png" alt="" width="40%">
+        <br><br>
+        <div class="nav-heading" style="width: 100%; color: #2b010f;">
+            We are waiting for you!
+        </div>
+    </center>
     <br>
     <br>
     <br>
@@ -231,6 +267,13 @@
             </script>
         </div>
     </div>
+    <!-- <div class="owl-carousel owl-theme"  style="width: 45vw;">
+            <div class="about item" style="width: 40vw; height: 30vh;">
+                <img src="med/final_pic/1.jpg" alt="" class="about-img">
+                <h4>{{ course.course_title }}</h4>
+                <p>{{ course.course_description }}</p>
+            </div>
+    </div> -->
     <br>
     <br>
     <center>
@@ -373,8 +416,11 @@
             <div class="nav-heading contact" style="font-size: 2rem;">
                 GET IN TOUCH
             </div>
-            For any queries and/or requests please contact us on our email address
-            <b>navfestxrise2021@navrachana.edu.in</b>, or you can reach us via any of the following numbers:
+            For any queries and/or requests please contact us on our email address:
+            <br>
+            <b>navfestxrise2021@navrachana.edu.in</b>, 
+            <br>
+            or you can reach us via any of the following numbers:
             <br>
             <br>
             <center>
@@ -489,6 +535,59 @@
 
         }
     </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            width:false,
+            loop:true,
+            margin:10,
+            items:1,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 5, 2021 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("timer-days").innerHTML = days;
+          document.getElementById("timer-hours").innerHTML = hours;
+          document.getElementById("timer-min").innerHTML = minutes;
+          document.getElementById("timer-sec").innerHTML = seconds;
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
 </body>
 
 </html>
