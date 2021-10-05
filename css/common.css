@@ -443,22 +443,29 @@ body{
 }
 
 .timer-cover{
-    width: 90px;
-    height: 70px;
     background: #2b010f;
     text-align: center;
     vertical-align: middle;
     color: #fee6ba;
     display: inline-block;
+    margin-left: 10px;
 }
+
+.timer-cover > span {
+    padding: 35px 25px;
+}
+
+.timer-cover-acent > span {
+    padding: 25px;
+}
+
 .timer-cover-acent{
-    width: 90px;
-    height: 70px;
-    background: #fee6ba;
+    background: #2b010f;
     text-align: center;
     vertical-align: middle;
-    color:#2b010f;
+    color:#fee6ba;
     display: inline-block;
+    margin-left: 10px;
 }
 @media screen and (max-width:900px){
     .nav-white-boi{
