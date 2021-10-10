@@ -449,6 +449,7 @@ body{
     color: #fee6ba;
     display: inline-block;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 .timer-cover > span {
@@ -466,6 +467,7 @@ body{
     color:#fee6ba;
     display: inline-block;
     margin-left: 10px;
+    border-radius: 10px;
 }
 @media screen and (max-width:900px){
     .nav-white-boi{
