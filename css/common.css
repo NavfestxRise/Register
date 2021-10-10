@@ -364,6 +364,7 @@ body{
     display: inline-block;
     margin: 20px;
     height: 100px;
+    border-radius: 10px;
 }
 .nav-brochure-button{
     color:white;
