@@ -89,7 +89,6 @@ body {
   background-color: #2b010f;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 h1 {
@@ -98,7 +97,6 @@ h1 {
   top: 25vh;
   width: 100vw;
   text-align: center;
-  font-family: "Amatic SC";
   font-size: 6vh;
   color: #fee6ba;
   opacity: 0.75;
